@@ -1,74 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wisenesis Healing Arts - Official Site</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #007bff; /* 蓝色，可根据您的品牌色调整 */
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            color: #fff;
-            background-color: #28a745; /* 绿色，用于行动号召 */
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .button:hover {
-            background-color: #218838;
-        }
-        .contact {
-            margin-top: 30px;
-            font-size: 0.9em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Wisenesis Healing Arts | Authentic Chinese Medicine & Acupuncture in Vienna, VA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Wisenesis Healing Arts offers authentic Chinese medicine, acupuncture, and online education with Dr. Yuanlin Piao in Vienna, Virginia.">
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --card: #ffffff;
+      --primary: #064e3b;
+      --accent: #047857;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: #111827;
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0.5rem 0 1.5rem;
+    }
+    @media (min-width: 640px) {
+      header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    .logo-title { font-size: 1.4rem; font-weight: 700; color: var(--primary); }
+    .tagline { font-size: 0.9rem; color: #4b5563; }
+    .tagline-sub { font-size: 0.8rem; color: #6b7280; }
+
+    nav { margin-top: 0.8rem; }
+    nav a {
+      margin-right: 1rem;
+      font-size: 0.9rem;
+      color: #374151;
+    }
+
+    .hero {
+      background: var(--card);
+      border-radius: 1.2rem;
+      padding: 1.5rem;
+      box-shadow: 0 12px 28px rgba(15,23,42,0.08);
+      margin-bottom: 2rem;
+      display: grid;
+      gap: 1.5rem;
+    }
+    @media (min-width: 900px) {
+      .hero {
+        grid-template-columns: 3fr 2fr;
+        align-items: center;
+      }
+    }
+    .pill {
+      display: inline-block;
+      padding: 0.3rem 0.75rem;
+      background: #ecfdf5;
+      color: #047857;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      margin-bottom: 0.8rem;
+    }
+    .hero h1 {
+      font-size: 1.9rem;
+      margin-bottom: 0.6rem;
+    }
+    .hero-photo {
+      width: 100%;
+      border-radius: 1rem;
+      object-fit: cover;
+      max-height: 330px;
+    }
+
+    .btn-row { display: flex; gap: 0.6rem; margin-top: 1rem; flex-wrap: wrap; }
+    .btn-primary,
+    .btn-outline {
+      padding: 0.7rem 1.2rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      border: 1px solid transparent;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: #111827;
+      color: white;
+    }
+    .btn-outline {
+      border: 1px solid #d1d5db;
+      background: white;
+      color: #111827;
+    }
+    .btn-outline:hover { background: #f3f4f6; }
+
+    main { display: grid; gap: 1.5rem; margin-bottom: 1.5rem; }
+    @media (min-width: 960px) { main { grid-template-columns: 3fr 2fr; } }
+
+    section {
+      background: var(--card);
+      border-radius: 1rem;
+      padding: 1.4rem;
+      box-shadow: 0 8px 20px rgba(15,23,42,0.05);
+      margin-bottom: 0.8rem;
+    }
+    section h2 { font-size: 1.2rem; color: var(--primary); margin-bottom: 0.7rem; }
+
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap: 0.7rem; margin-top: 0.6rem; }
+    .gallery img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 0.8rem;
+    }
+
+    .footer {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      text-align: center;
+      padding: 1rem 0 0.4rem;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Wisenesis Healing Arts</h1>
-        <p>
-            We are currently focusing on developing high-value online continuing education courses for acupuncturists and TCM practitioners.
-            Our new course platform is now hosted on Teachable.
-        </p>
-        
-        <!-- **请将以下链接替换为您 Teachable 课程的实际链接** -->
-        <a href="YOUR_TEACHABLE_COURSE_HOMEPAGE_LINK" class="button">
-            Explore Our Online Courses
-        </a>
-        
-        <!-- **请将以下链接替换为您诊所预约的实际链接** -->
-        <a href="YOUR_CLINIC_APPOINTMENT_LINK" class="button" style="background-color: #007bff;">
-            Book a Clinic Appointment
-        </a>
+<div class="page">
 
-        <div class="contact">
-            <p>Email: pumchpyl@gmail.com</p>
-            <p>&copy; 2025 Wisenesis LLC. All rights reserved.</p>
-        </div>
+  <header>
+    <div>
+      <div class="logo-title">Wisenesis Healing Arts</div>
+      <div class="tagline">Authentic Chinese Medicine · Integrative Healing</div>
+      <div class="tagline-sub">自然中医 · 身心调和 · 진정한 중의학</div>
     </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="education.html">Education</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <div class="pill">Now accepting new patients · By appointment</div>
+      <h1>Chinese Medicine & Acupuncture in Vienna, VA</h1>
+      <p>Gentle, classical-based treatment for pain, stress, sleep, digestion, and long-term wellness.</p>
+      <p style="font-size:0.88rem; margin-top:0.4rem;">
+        以经典辨证论治为基础，调理疼痛、焦虑、失眠、消化与慢性病。<br>
+        고전 중의학을 기반으로 통증·불면·소화기·만성질환을 섬세하게 조절합니다.
+      </p>
+      <p style="margin-top:0.6rem; font-size:0.92rem;">
+        <strong>Clinic:</strong><br>
+        501 Church St NE, Suite 102, Vienna, VA
+      </p>
+      <div class="btn-row">
+        <a class="btn-primary" href="https://wisenesis.setmore.com/" target="_blank">Book Appointment</a>
+        <a class="btn-outline" href="mailto:pumchpyl@gmail.com">Email Clinic</a>
+      </div>
+    </div>
+
+    <div>
+      <img src="images/dr-piao.jpg" class="hero-photo" alt="Dr. Yuanlin Piao">
+    </div>
+  </section>
+
+  <main>
+    <section id="about">
+      <h2>About Dr. Yuanlin Piao (朴元林)</h2>
+      <p>
+        Founder of Wisenesis Healing Arts. Former senior physician at Peking Union Medical College Hospital (PUMCH).
+        Over 20 years of clinical and teaching experience in integrative medicine, now practicing in the Greater Washington D.C. area.
+      </p>
+      <p style="margin-top:0.6rem; font-size:0.9rem;">
+        在北京协和医院从事中西医结合二十余年，擅长以体质+辨证的方法处理慢性病与疑难杂症。
+      </p>
+    </section>
+
+    <section id="location">
+      <h2>Location & Hours</h2>
+      <p><strong>Address:</strong><br>501 Church St NE, Suite 102, Vienna, VA</p>
+      <p><strong>Hours:</strong><br>Mon–Fri 9am–6pm · Sat by appointment</p>
+    </section>
+
+    <section id="services">
+      <h2>What We Treat</h2>
+      <ul style="padding-left:1rem; color:#4b5563; font-size:0.92rem;">
+        <li>Pain (neck, shoulder, back, joints, headaches)</li>
+        <li>Stress, anxiety, insomnia</li>
+        <li>Digestive issues, fatigue</li>
+        <li>Women’s health & hormonal balance</li>
+        <li>Chronic complex internal medicine conditions</li>
+      </ul>
+      <p style="margin-top:0.6rem; font-size:0.88rem;">
+        重点：疼痛、睡眠、情绪、消化与慢性疑难病。<br>
+        주요: 통증·불면·소화·만성 복합 질환.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education & Online Course</h2>
+      <p>
+        Wisenesis Education now focuses on the flagship course:
+        <strong>Advanced Formula Design</strong> — a deep clinical training for TCM students and practitioners.
+      </p>
+      <div class="btn-row" style="margin-top:0.8rem;">
+        <a class="btn-outline" href="education.html">Learn More</a>
+        <a class="btn-outline" href="https://yuanlin-piao-s-school.teachable.com/" target="_blank">Visit Teachable</a>
+      </div>
+    </section>
+  </main>
+
+  <section id="interior">
+    <h2>Inside the Clinic</h2>
+    <div class="gallery">
+      <img src="images/clinic-room-1.jpg" alt="">
+      <img src="images/clinic-room-2.jpg" alt="">
+      <img src="images/clinic-room-3.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:pumchpyl@gmail.com">pumchpyl@gmail.com</a></p>
+    <p><strong>Booking:</strong> <a href="https://wisenesis.setmore.com/">wisenesis.setmore.com</a></p>
+  </section>
+
+  <div class="footer">
+    © <span id="year"></span> Wisenesis Healing Arts
+  </div>
+
+</div>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
