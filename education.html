@@ -1,92 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Advanced Formula Design Masterclass | Wisenesis Education</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education | Wisenesis Healing Arts</title>
+  <meta name="description" content="Wisenesis education: clinical reasoning, classical foundations, and structured herbal strategy — beyond memorization." />
+  <meta property="og:title" content="Wisenesis Education" />
+  <meta property="og:description" content="Clinical reasoning + classical foundations + structured herbal strategy." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wisenesis.com/education.html" />
+
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      background:#f8f8f8;
-      margin:0; padding:0;
-      color:#1f2937;
-      line-height:1.6;
+    :root{
+      --bg:#0b1220; --text:rgba(255,255,255,.92); --muted:rgba(255,255,255,.72);
+      --border:rgba(255,255,255,.14); --card:rgba(255,255,255,.06);
+      --accent:#7bd6c6; --accent2:#9bd3ff; --radius:18px; --max:1120px;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
     }
-    .page { max-width:900px; margin:0 auto; padding:1.5rem; }
-    header { margin-bottom:1.5rem; }
-    h1 { font-size:1.8rem; color:#064e3b; margin-bottom:0.8rem; }
-    h2 { font-size:1.2rem; color:#047857; margin-top:1.3rem; }
-    .btn {
-      display:inline-block; padding:0.7rem 1.2rem;
-      border-radius:999px; background:#111827; color:white;
-      text-decoration:none; font-size:0.9rem; margin-top:1rem;
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(123,214,198,.22), transparent 60%),
+                  radial-gradient(900px 500px at 110% 10%, rgba(155,211,255,.20), transparent 55%),
+                  var(--bg);
+      color:var(--text); line-height:1.65;
     }
-    nav a { margin-right:1rem; color:#047857; text-decoration:none; }
-    nav a:hover { text-decoration:underline; }
-    .footer {
-      margin-top:2rem;
-      font-size:0.8rem;
-      color:#9ca3af;
-      text-align:center;
+    .wrap{max-width:var(--max); margin:0 auto; padding:22px 18px 72px}
+    a{color:inherit}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+      padding:10px 12px; border:1px solid var(--border);
+      background:rgba(0,0,0,.18); border-radius:999px; backdrop-filter: blur(10px);
+      position:sticky; top:14px; z-index:5;
     }
+    .brand{display:flex; align-items:center; gap:10px; text-decoration:none}
+    .dot{width:10px; height:10px; border-radius:50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 0 4px rgba(123,214,198,.12);
+    }
+    .brand b{letter-spacing:.2px}
+    .nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .nav a{ text-decoration:none; color:var(--muted); padding:8px 12px; border-radius:999px; border:1px solid transparent;}
+    .nav a:hover{color:var(--text); border-color:var(--border); background:rgba(255,255,255,.04)}
+    .hero{
+      margin:18px 0 14px; padding:26px 20px;
+      border:1px solid var(--border); border-radius:var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      box-shadow:var(--shadow);
+    }
+    h1{margin:0 0 10px; font-size:30px; line-height:1.2}
+    p{margin:0; color:var(--muted); max-width:80ch}
+    .grid{display:grid; grid-template-columns: 1fr 1fr; gap:14px; margin-top:14px}
+    .card{
+      padding:18px 16px; border:1px solid var(--border); border-radius:var(--radius);
+      background:rgba(255,255,255,.05); box-shadow: 0 8px 24px rgba(0,0,0,.22);
+    }
+    .card h2{margin:0 0 8px; font-size:18px; color:var(--text)}
+    ul{margin:10px 0 0 18px; color:var(--muted)}
+    li{margin:6px 0}
+    .btnrow{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:11px 14px; border-radius:12px;
+      border:1px solid var(--border);
+      text-decoration:none;
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      font-weight:600;
+    }
+    .btn.primary{
+      border-color:transparent;
+      background: linear-gradient(135deg, rgba(123,214,198,.95), rgba(155,211,255,.92));
+      color:#06111b;
+    }
+    .footer{margin-top:20px; padding-top:18px; border-top:1px solid var(--border); color:var(--muted); font-size:13px}
+    @media (max-width: 920px){ .grid{grid-template-columns:1fr} }
   </style>
 </head>
 <body>
-<div class="page">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="Wisenesis Home">
+        <span class="dot" aria-hidden="true"></span>
+        <b>Wisenesis</b>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="education.html">Education</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
 
-  <header>
-    <nav>
-      <a href="index.html">← Back to Home</a>
-      <a href="https://yuanlin-piao-s-school.teachable.com/p/advanced-formula-design-masterclass" target="_blank">Course Page</a>
-    </nav>
-  </header>
+    <section class="hero">
+      <h1>Education Philosophy</h1>
+      <p>
+        Wisenesis education is built to train <b>clinical thinking</b> — not just recall.
+        The goal is to help learners move from “Which formula should I use?” to
+        “What structural direction does this case require?”
+      </p>
+      <div class="btnrow">
+        <a class="btn primary" href="https://yuanlin-piao-s-school.teachable.com/p/advanced-formula-design-masterclass" target="_blank" rel="noopener">
+          Visit Advanced Formula Design Masterclass (AFDM) Sales Page
+        </a>
+        <a class="btn" href="index.html">Back to Home</a>
+      </div>
+    </section>
 
-  <h1>Advanced Formula Design Masterclass</h1>
+    <div class="grid">
+      <section class="card">
+        <h2>How We Teach</h2>
+        <ul>
+          <li><b>Classical foundations</b> + modern medical reasoning</li>
+          <li><b>Pathomechanism-first</b> case reading (not symptom checklists)</li>
+          <li><b>Stable structure</b>: base formula as a “spine”, then layered strategy</li>
+          <li><b>Follow-up logic</b>: adjustment principles and decision checkpoints</li>
+          <li><b>Repeatability</b>: a framework you can apply across cases</li>
+        </ul>
+      </section>
 
-  <p>
-    <strong>Advanced Formula Design</strong> is the flagship Wisenesis course, created for TCM students and
-    practitioners who want to deepen their clinical prescription logic, classical foundations, and
-    real-world herbal decision-making.
-  </p>
+      <section class="card">
+        <h2>Flagship Course: Advanced Formula Design Masterclass (Advanced Formula Design Masterclass)</h2>
+        <p>
+          A deep clinical training for TCM students and practitioners who want to refine prescription logic,
+          build stronger classical foundations, and upgrade real-world decision-making.
+        </p>
+        <ul>
+          <li>Mechanism → structure → strategy</li>
+          <li>Complex cases: stability, trade-offs, and iteration</li>
+          <li>Designed for clinicians who want an “engineer’s” approach to formulas</li>
+        </ul>
+        <div class="btnrow">
+          <a class="btn" href="https://yuanlin-piao-s-school.teachable.com/p/advanced-formula-design-masterclass" target="_blank" rel="noopener">
+            View Course on Teachable
+          </a>
+        </div>
+      </section>
+    </div>
 
-  <p>
-    Instead of memorizing formulas, this course teaches you how to:
-  </p>
+    <section class="card" style="margin-top:14px">
+      <h2>For Institutions / Employers</h2>
+      <p>
+        If you are evaluating Dr. Piao for a role (clinical, academic, program leadership, or integrative medicine strategy),
+        this website serves as a public-facing overview. A formal CV/portfolio package can be shared upon request.
+      </p>
+      <div class="btnrow">
+        <a class="btn" href="mailto:info@wisenesis.com?subject=CV%20Request%20/%20Role%20Inquiry">Request CV / Portfolio Package</a>
+        <a class="btn" href="index.html#contact">Contact</a>
+      </div>
+    </section>
 
-  <ul>
-    <li>Identify the core pathomechanism in complex cases</li>
-    <li>Select a stable base formula as the “spine”</li>
-    <li>Layer add-ons, modifications, and secondary formulas</li>
-    <li>Adjust dosage and structure during follow-ups</li>
-    <li>Build a clinical thinking model that is repeatable</li>
-  </ul>
+    <footer class="footer">
+      <div>© <span id="year"></span> Wisenesis Healing Arts.</div>
+    </footer>
+  </div>
 
-  <h2>Who This Course Is For</h2>
-  <ul>
-    <li>Senior TCM students preparing for clinic</li>
-    <li>Acupuncturists wanting deeper herbal skills</li>
-    <li>Herbalists seeking structured formula training</li>
-    <li>Doctors who treat chronic internal medicine patterns</li>
-  </ul>
-
-  <h2>Enroll Now</h2>
-  <p>
-    Enrollment is open on Teachable. Click below to view the full curriculum, preview lessons,
-    pricing, and enrollment details.
-  </p>
-
-  <a class="btn"
-     href="https://yuanlin-piao-s-school.teachable.com/p/advanced-formula-design-masterclass"
-     target="_blank">
-    Go to Course Sales Page
-  </a>
-
-  <div class="footer">© <span id="year"></span> Wisenesis Education</div>
-
-</div>
-
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
