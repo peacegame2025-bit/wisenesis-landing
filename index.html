@@ -1,294 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wisenesis Healing Arts | Chinese Medicine & Integrative Consultation (By Appointment Only)</title>
-  <meta name="description" content="Wisenesis Healing Arts — Chinese medicine, herbal strategy consultation, and online education by Dr. Yuanlin Piao. By appointment only. Northern Virginia / Greater Washington, D.C. area. Telehealth options available where appropriate." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wisenesis Healing Arts | Dr. Yuanlin Piao</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Wisenesis Healing Arts" />
-  <meta property="og:description" content="Chinese medicine, herbal strategy consultation, and online education by Dr. Yuanlin Piao. By appointment only." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://wisenesis.com/" />
+<style>
+:root{
+  --bg:#0b1320;
+  --card:#111a2c;
+  --primary:#0ea5a5;
+  --text:#e6edf3;
+  --muted:#94a3b8;
+  --border:#1f2937;
+}
 
-  <style>
-    :root{
-      --bg: #0b1220;
-      --card: rgba(255,255,255,.06);
-      --card2: rgba(255,255,255,.10);
-      --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.72);
-      --accent: #7bd6c6;
-      --accent2:#9bd3ff;
-      --border: rgba(255,255,255,.14);
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius: 18px;
-      --max: 1120px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(1200px 600px at 20% -10%, rgba(123,214,198,.25), transparent 60%),
-                  radial-gradient(900px 500px at 110% 10%, rgba(155,211,255,.22), transparent 55%),
-                  var(--bg);
-      color:var(--text);
-      line-height:1.65;
-    }
-    a{color:inherit}
-    .wrap{max-width:var(--max); margin:0 auto; padding:22px 18px 72px}
-    .topbar{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:14px; padding:10px 12px;
-      border:1px solid var(--border);
-      background:rgba(0,0,0,.18);
-      border-radius:999px;
-      backdrop-filter: blur(10px);
-      position:sticky; top:14px; z-index:5;
-    }
-    .brand{display:flex; align-items:center; gap:10px; text-decoration:none}
-    .dot{width:10px; height:10px; border-radius:50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 0 0 4px rgba(123,214,198,.12);
-    }
-    .brand b{letter-spacing:.2px}
-    .nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
-    .nav a{
-      text-decoration:none; color:var(--muted);
-      padding:8px 12px; border-radius:999px;
-      border:1px solid transparent;
-    }
-    .nav a:hover{color:var(--text); border-color:var(--border); background:rgba(255,255,255,.04)}
-    .pill{
-      display:inline-flex; gap:10px; flex-wrap:wrap;
-      margin:18px 0 10px;
-    }
-    .pill span{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:8px 12px; border-radius:999px;
-      background:rgba(255,255,255,.06);
-      border:1px solid var(--border);
-      color:var(--muted);
-      font-size:13px;
-    }
-    .hero{
-      margin:18px 0 22px;
-      padding:26px 20px;
-      border-radius:var(--radius);
-      border:1px solid var(--border);
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      box-shadow: var(--shadow);
-    }
-    h1{margin:0 0 10px; font-size:34px; line-height:1.2}
-    .sub{margin:0; color:var(--muted); max-width:72ch}
-    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:18px}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:11px 14px; border-radius:12px;
-      border:1px solid var(--border);
-      text-decoration:none;
-      background:rgba(255,255,255,.06);
-      color:var(--text);
-      font-weight:600;
-    }
-    .btn.primary{
-      border-color:transparent;
-      background: linear-gradient(135deg, rgba(123,214,198,.95), rgba(155,211,255,.92));
-      color:#06111b;
-    }
-    .btn:hover{transform: translateY(-1px)}
-    .grid{
-      display:grid; grid-template-columns: 1.15fr .85fr;
-      gap:14px;
-      margin-top:14px;
-    }
-    .card{
-      padding:18px 16px;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      background:rgba(255,255,255,.05);
-      box-shadow: 0 8px 24px rgba(0,0,0,.22);
-    }
-    .card h2{margin:0 0 8px; font-size:18px}
-    .card p{margin:0; color:var(--muted)}
-    ul{margin:10px 0 0 18px; color:var(--muted)}
-    li{margin:6px 0}
-    .kvs{display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-top:12px}
-    .kv{
-      padding:12px 12px; border-radius:14px;
-      background:rgba(255,255,255,.04); border:1px solid var(--border);
-      color:var(--muted); font-size:14px;
-    }
-    .kv b{color:var(--text)}
-    .section{margin-top:14px}
-    .footer{
-      margin-top:20px; padding-top:18px;
-      border-top:1px solid var(--border);
-      color:var(--muted); font-size:13px;
-    }
-    .small{font-size:12px; color:rgba(255,255,255,.62)}
-    .split{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
-    @media (max-width: 920px){
-      .grid{grid-template-columns:1fr}
-      h1{font-size:30px}
-      .split{grid-template-columns:1fr}
-    }
-  
-/* --- Hero photo card --- */
-.heroGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:1.25rem;align-items:start}
-@media (max-width:900px){.heroGrid{grid-template-columns:1fr}}
-.heroCard{background:var(--card);border:1px solid var(--border);border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.06);padding:1rem}
-.photo{width:100%;aspect-ratio:1/1;border-radius:18px;background:linear-gradient(180deg, rgba(6,78,59,.08), rgba(4,120,87,.06));display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid var(--border)}
-.photo img{width:100%;height:100%;object-fit:cover;display:block}
-.photo .initials{font-weight:800;letter-spacing:.08em;color:var(--primary);font-size:2.1rem}
-.photo.fallback .initials{display:block}
-.photo:not(.fallback) .initials{display:none}
-.cardBody{padding:.9rem .2rem .2rem}
-.name{font-size:1.15rem;font-weight:800}
-.cjk{font-weight:700;color:var(--muted)}
-.meta{margin-top:.35rem;color:var(--muted);font-size:.95rem}
-.miniCta{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.9rem}
-.btn.small{padding:.55rem .8rem;font-size:.95rem}
-.note{margin-top:.9rem;font-size:.92rem;color:var(--muted);background:rgba(0,0,0,.03);border:1px dashed var(--border);padding:.75rem;border-radius:14px}
-.note code{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:.9em}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;
+  background:var(--bg);
+  color:var(--text);
+}
 
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+h1{
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+.sub{
+  color:var(--muted);
+  font-size:18px;
+  line-height:1.6;
+}
+
+.heroGrid{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:40px;
+}
+
+@media(max-width:900px){
+  .heroGrid{
+    grid-template-columns:1fr;
+  }
+}
+
+.heroCard{
+  background:var(--card);
+  padding:25px;
+  border-radius:20px;
+  border:1px solid var(--border);
+}
+
+.photo{
+  width:100%;
+  aspect-ratio:1/1;
+  border-radius:18px;
+  overflow:hidden;
+  background:#1f2937;
+}
+
+.photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.name{
+  font-size:22px;
+  font-weight:700;
+  margin-top:20px;
+}
+
+.meta{
+  color:var(--muted);
+  margin-top:8px;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 20px;
+  border-radius:12px;
+  margin-top:20px;
+  text-decoration:none;
+  font-weight:600;
+  border:1px solid var(--border);
+  color:white;
+}
+
+.primary{
+  background:var(--primary);
+  border:none;
+}
+
+.btn:hover{
+  opacity:0.9;
+}
 </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="topbar">
-      <a class="brand" href="index.html" aria-label="Wisenesis Home">
-        <span class="dot" aria-hidden="true"></span>
-        <b>Wisenesis</b>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="education.html">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
 
-    <div class="pill" aria-label="Key info">
-      <span>By appointment only</span>
-      <span>Greater Washington, D.C. area</span>
-      <span>Mobile / private sessions + telehealth (where appropriate)</span>
-    </div>
+<div class="container">
+<div class="heroGrid">
 
-    <section class="hero">
-  <div class="heroGrid">
-    <div class="heroText">
-      <h1>Chinese Medicine &amp; Integrative Consultation</h1>
-      <p class="sub">
-        Wisenesis Healing Arts provides clinical consultation and education grounded in classical Chinese medicine and modern medical reasoning.
-        Led by <b>Dr. Yuanlin Piao (朴元林)</b> — clinician, educator, and former senior physician at Peking Union Medical College Hospital (PUMCH).
-      </p>
+<div>
+<h1>Chinese Medicine & Integrative Consultation</h1>
 
-      <div class="cta">
-        <a class="btn primary" href="#contact">Contact / Request an Appointment</a>
-        <a class="btn" href="education.html">Explore Education</a>
-        <a class="btn" href="https://yuanlin-piao-s-school.teachable.com/p/advanced-formula-design-masterclass" target="_blank" rel="noopener">View Advanced Formula Design Masterclass</a>
-      </div>
+<p class="sub">
+Wisenesis Healing Arts provides clinical consultation and education grounded in classical Chinese medicine and modern medical reasoning.
+Led by <strong>Dr. Yuanlin Piao (朴元林)</strong> — clinician, educator, and former senior physician at Peking Union Medical College Hospital (PUMCH).
+</p>
 
-      <div class="kvs" role="list" aria-label="Highlights">
-        <div class="kv" role="listitem"><b>Focus:</b> complex chronic patterns, internal medicine reasoning, and herbal strategy</div>
-        <div class="kv" role="listitem"><b>Approach:</b> pattern differentiation + mechanism + structured decision logic</div>
-        <div class="kv" role="listitem"><b>Care model:</b> private sessions / telehealth (where appropriate)</div>
-      </div>
-    </div>
+<a class="btn primary" href="https://wisenesis.setmore.com" target="_blank">
+Book Appointment
+</a>
 
-    <aside class="heroCard" aria-label="Profile">
-      <div class="photo" aria-label="Photo of Dr. Yuanlin Piao">
-        <img src="images/dr-piao.jpg" alt="Dr. Yuanlin Piao" loading="lazy"
-             onerror="this.style.display='none'; this.parentElement.classList.add('fallback');" />
-        <span class="initials" aria-hidden="true">YP</span>
-      </div>
-      <div class="cardBody">
-        <div class="name">Dr. Yuanlin Piao <span class="cjk">(朴元林)</span></div>
-        <div class="meta">Chinese medicine clinician &amp; educator</div>
-        <div class="meta">Former senior physician, PUMCH (2001–2022)</div>
-        <div class="meta">Greater Washington, D.C. area · By appointment only</div>
+<a class="btn" href="education.html">
+Explore Education
+</a>
 
-        <div class="miniCta">
-          <a class="btn small" href="#contact">Contact</a>
-          <a class="btn small" href="https://yuanlin-piao-s-school.teachable.com/p/advanced-formula-design-masterclass" target="_blank" rel="noopener">Course</a>
-        </div>
+<a class="btn" href="https://yuanlin-piao-s-school.teachable.com/p/advanced-formula-design-masterclass" target="_blank">
+Advanced Formula Design Masterclass
+</a>
 
-        <div class="note">
-          <b>Photo tip:</b> Upload your headshot to the <code>images</code> folder and name it <code>dr-piao.jpg</code> (recommended ~800×800).
-        </div>
-      </div>
-    </aside>
-  </div>
-</section>
+</div>
 
-    <div class="grid">
-      <section class="card">
-        <h2>Clinical Consultation (By Appointment Only)</h2>
-        <p>
-          Consultation is designed for patients or practitioners who value structured clinical reasoning and careful follow-up strategy.
-          Services may include intake review, pattern analysis, herbal strategy discussion, and lifestyle guidance.
-        </p>
-        <ul>
-          <li>Private sessions (location coordinated after booking)</li>
-          <li>Telehealth / video consults where appropriate</li>
-          <li>Follow-up planning focused on stability and repeatability</li>
-        </ul>
-        <p class="small" style="margin-top:10px">
-          Note: This website does not provide emergency care. If you have an urgent medical issue, call emergency services.
-        </p>
-      </section>
+<div class="heroCard">
 
-      <section class="card">
-        <h2>Education</h2>
-        <p>
-          Wisenesis education focuses on helping clinicians move beyond formula memorization toward a repeatable thinking process.
-          The flagship course is <b>Advanced Formula Design Masterclass</b>.
-        </p>
-        <div class="cta" style="margin-top:12px">
-          <a class="btn" href="education.html">Education Overview</a>
-          <a class="btn" href="https://yuanlin-piao-s-school.teachable.com/p/advanced-formula-design-masterclass" target="_blank" rel="noopener">Go to Advanced Formula Design Masterclass (AFDM)</a>
-        </div>
-      </section>
-    </div>
+<div class="photo">
+<img src="images/dr-piao.jpg" alt="Dr. Yuanlin Piao">
+</div>
 
-    <section class="section split">
-      <div class="card">
-        <h2>About Dr. Yuanlin Piao (朴元林)</h2>
-        <p>
-          Founder of Wisenesis Healing Arts. Former senior physician at PUMCH with over 20 years of clinical and teaching experience
-          in integrative medicine (Chinese + Western clinical thinking).
-        </p>
-        <p style="margin-top:10px">
-          北京协和医院中西医结合临床与教学二十余年。擅长以“辨证 + 机制 + 结构化决策”的方式处理慢性病与疑难杂症，
-          强调可重复的临床思维模型与随访策略。
-        </p>
-      </div>
+<div class="name">
+Dr. Yuanlin Piao (朴元林)
+</div>
 
-      <div class="card" id="contact">
-        <h2>Contact</h2>
-        <p>
-          For appointments, collaboration, or education inquiries, please use email first.
-        </p>
-        <ul>
-          <li><b>Email:</b> <a href="mailto:info@wisenesis.com">info@wisenesis.com</a></li>
-          <li><b>Location:</b> Northern Virginia / Greater Washington, D.C. (no walk-in clinic)</li>
-        </ul>
-        <p class="small" style="margin-top:10px">
-          If you are a prospective employer or institution and would like a formal CV/portfolio package, please email with the role title and timeline.
-        </p>
-      </div>
-    </section>
+<div class="meta">
+Chinese medicine clinician & educator
+</div>
 
-    <footer class="footer">
-      <div>© <span id="year"></span> Wisenesis Healing Arts. All rights reserved.</div>
-      <div class="small" style="margin-top:8px">
-        Disclaimer: Information on this site is for educational purposes and does not replace individualized medical advice.
-      </div>
-    </footer>
-  </div>
+<div class="meta">
+Former senior physician, PUMCH (2001–2022)
+</div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<div class="meta">
+Greater Washington, D.C. area · By appointment only
+</div>
+
+<a class="btn" href="https://wisenesis.setmore.com" target="_blank">
+Schedule via Setmore
+</a>
+
+</div>
+
+</div>
+</div>
+
 </body>
 </html>
