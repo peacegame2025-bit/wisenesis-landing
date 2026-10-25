@@ -3,165 +3,267 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wisenesis Healing Arts | Dr. Yuanlin Piao</title>
+<title>Dr. Yuanlin Piao | Chinese Medicine — Clinical Practice & Teaching</title>
+<meta name="description" content="Dr. Yuanlin Piao (朴元林), Chinese medicine clinician and educator. Explore Chinese and integrative medicine, classical texts, clinical reasoning, and teaching videos.">
 
 <style>
 :root{
+  color-scheme:dark;
   --bg:#0b1320;
   --card:#111a2c;
-  --primary:#0ea5a5;
+  --primary:#2dd4bf;
   --text:#e6edf3;
-  --muted:#94a3b8;
-  --border:#1f2937;
+  --muted:#a8b5c6;
+  --border:#263449;
 }
-
+*{box-sizing:border-box}
 body{
   margin:0;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   background:var(--bg);
   color:var(--text);
+  line-height:1.7;
 }
-
 .container{
   max-width:1100px;
   margin:auto;
-  padding:60px 20px;
+  padding:60px 24px 32px;
 }
-
-h1{
-  font-size:40px;
-  margin-bottom:20px;
+.brand{
+  color:var(--primary);
+  font-weight:700;
+  letter-spacing:.14em;
+  font-size:14px;
+  margin-bottom:36px;
 }
-
-.sub{
-  color:var(--muted);
-  font-size:18px;
-  line-height:1.6;
-}
-
 .heroGrid{
   display:grid;
   grid-template-columns:1.2fr .8fr;
-  gap:40px;
+  gap:48px;
+  align-items:start;
 }
-
-@media(max-width:900px){
-  .heroGrid{
-    grid-template-columns:1fr;
-  }
+h1{
+  font-size:clamp(34px,5vw,52px);
+  line-height:1.2;
+  margin:0 0 12px;
 }
-
+.chineseName{
+  font-size:26px;
+  margin:0 0 24px;
+}
+.sub{
+  color:var(--muted);
+  font-size:18px;
+  margin:0 0 18px;
+}
+.channel{
+  margin-top:30px;
+  padding-top:24px;
+  border-top:1px solid var(--border);
+}
+h2{
+  font-size:23px;
+  line-height:1.4;
+  margin:0 0 14px;
+}
+.btn{
+  display:inline-block;
+  padding:13px 21px;
+  border-radius:12px;
+  margin-top:10px;
+  text-decoration:none;
+  font-weight:700;
+  background:var(--primary);
+  color:#07151b;
+}
+.btn:hover{background:#5eead4}
+.btn:focus-visible{
+  outline:3px solid white;
+  outline-offset:4px;
+}
+.secondary{
+  background:transparent;
+  border:1px solid var(--border);
+  color:var(--text);
+}
+.secondary:hover{background:var(--card)}
 .heroCard{
   background:var(--card);
-  padding:25px;
+  padding:24px;
   border-radius:20px;
   border:1px solid var(--border);
 }
-
 .photo{
   width:100%;
   aspect-ratio:1/1;
-  border-radius:18px;
+  border-radius:14px;
   overflow:hidden;
-  background:#1f2937;
+  background:var(--border);
 }
-
 .photo img{
+  display:block;
   width:100%;
   height:100%;
   object-fit:cover;
 }
-
 .name{
   font-size:22px;
   font-weight:700;
   margin-top:20px;
 }
-
 .meta{
   color:var(--muted);
-  margin-top:8px;
+  margin-top:10px;
 }
-
-.btn{
-  display:inline-block;
-  padding:12px 20px;
-  border-radius:12px;
-  margin-top:20px;
-  text-decoration:none;
-  font-weight:600;
+.interests{
+  max-width:760px;
+  margin-top:48px;
+  padding:24px;
+  background:var(--card);
   border:1px solid var(--border);
-  color:white;
+  border-radius:20px;
 }
-
-.primary{
-  background:var(--primary);
-  border:none;
+.interests h2{font-size:20px}
+.interests .sub{font-size:16px}
+.video{
+  margin-top:20px;
+  aspect-ratio:16/9;
+  overflow:hidden;
+  border-radius:12px;
+  background:#000;
 }
-
-.btn:hover{
-  opacity:0.9;
+.video iframe{
+  display:block;
+  width:100%;
+  height:100%;
+  border:0;
+}
+footer{
+  margin-top:40px;
+  padding-top:22px;
+  border-top:1px solid var(--border);
+  color:var(--muted);
+  font-size:13px;
+}
+footer p{margin:8px 0}
+@media(max-width:800px){
+  .container{padding-top:30px}
+  .heroGrid{grid-template-columns:1fr;gap:30px}
+  .heroCard{max-width:420px;width:100%}
+  .interests{padding:20px;margin-top:32px}
 }
 </style>
 </head>
 
 <body>
+<main class="container">
+  <div class="brand">WISENESIS · 中醫臨床與教學</div>
 
-<div class="container">
-<div class="heroGrid">
+  <div class="heroGrid">
+    <section aria-labelledby="main-title">
+      <h1 id="main-title">Dr. Yuanlin Piao</h1>
+      <p class="chineseName" lang="zh-Hant">朴元林博士</p>
 
-<div>
-<h1>Chinese Medicine & Integrative Consultation</h1>
+      <p class="sub">
+        Chinese Medicine · Clinical Practice · Education &amp; Teaching
+      </p>
+      <p class="sub" lang="zh-Hant">
+        中醫臨床 · 教育教學
+      </p>
 
-<p class="sub">
-Wisenesis Healing Arts provides clinical consultation and education grounded in classical Chinese medicine and modern medical reasoning.
-Led by <strong>Dr. Yuanlin Piao (朴元林)</strong> — clinician, educator, and former senior physician at Peking Union Medical College Hospital (PUMCH).
-</p>
+      <p class="sub">
+        Drawing on decades of clinical and teaching experience in
+        Chinese and integrative medicine to share Chinese medicine
+        theory, classical texts, clinical pattern differentiation,
+        and treatment approaches.
+      </p>
+      <p class="sub" lang="zh-Hant">
+        結合多年中西醫結合臨床與教學經驗，分享中醫理論、
+        經典解讀、臨床辨證與治療思路。
+      </p>
 
-<a class="btn primary" href="https://wisenesis.setmore.com" target="_blank">
-Book Appointment
-</a>
+      <div class="channel">
+        <h2>Authentic Traditional Chinese Medicine</h2>
+        <p class="sub">
+          Visit my YouTube channel for Chinese medicine lectures,
+          clinical perspectives, and teaching videos.
+        </p>
+        <p class="sub" lang="zh-Hant">
+          歡迎前往我的 YouTube 頻道，觀看中醫教學影片、
+          臨床思路分享，並訂閱後續更新。
+        </p>
 
-<a class="btn" href="education.html">
-Explore Education
-</a>
+        <a class="btn"
+           href="https://www.youtube.com/@AuthenticTraditionalChineseMed"
+           target="_blank"
+           rel="noopener noreferrer">
+          Watch on YouTube · 觀看教學頻道 ↗
+        </a>
+      </div>
+    </section>
 
-<a class="btn" href="https://yuanlin-piao-s-school.teachable.com/p/advanced-formula-design-masterclass" target="_blank">
-Advanced Formula Design Masterclass
-</a>
+    <aside class="heroCard" aria-label="About Dr. Piao">
+      <div class="photo">
+        <img src="images/dr-piao.jpg"
+             alt="Dr. Yuanlin Piao — 朴元林博士">
+      </div>
 
-</div>
+      <div class="name">Dr. Yuanlin Piao · 朴元林</div>
+      <div class="meta">Chinese medicine clinician &amp; educator</div>
+      <div class="meta" lang="zh-Hant">中醫臨床與教育工作者</div>
 
-<div class="heroCard">
+      <div class="meta">
+        Former senior physician,<br>
+        Peking Union Medical College Hospital<br>
+        2001–2022
+      </div>
 
-<div class="photo">
-<img src="images/dr-piao.jpg" alt="Dr. Yuanlin Piao">
-</div>
+      <div class="meta" lang="zh-Hant">
+        曾於北京協和醫院工作二十餘年
+      </div>
+    </aside>
+  </div>
 
-<div class="name">
-Dr. Yuanlin Piao (朴元林)
-</div>
+  <section class="interests" aria-labelledby="interests-title">
+    <h2 id="interests-title">
+      Beyond the Classroom · 課餘雅趣
+    </h2>
+    <p class="sub">
+      Outside teaching and clinical work, I enjoy creating music
+      and sharing reflections on life.
+    </p>
+    <p class="sub" lang="zh-Hant">
+      教學與臨床之外，分享音樂創作與生活感悟。
+    </p>
 
-<div class="meta">
-Chinese medicine clinician & educator
-</div>
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/siRlkiSdRZA"
+        title="Music from Yuanlin Piao — Beyond the Classroom"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
 
-<div class="meta">
-Former senior physician, PUMCH (2001–2022)
-</div>
+    <a class="btn secondary"
+       href="https://youtu.be/siRlkiSdRZA"
+       target="_blank"
+       rel="noopener noreferrer">
+      Listen on YouTube · 前往 YouTube 聆聽 ↗
+    </a>
+  </section>
 
-<div class="meta">
-Greater Washington, D.C. area · By appointment only
-</div>
-
-<a class="btn" href="https://wisenesis.setmore.com" target="_blank">
-Schedule via Setmore
-</a>
-
-</div>
-
-</div>
-</div>
-
+  <footer>
+    <p>
+      Content is provided for educational purposes and does not
+      replace individual medical assessment, diagnosis, or treatment.
+    </p>
+    <p lang="zh-Hant">
+      內容僅供教育教學參考，不能替代個別醫療評估、診斷或治療。
+    </p>
+    <p>© Wisenesis · Yuanlin Piao</p>
+  </footer>
+</main>
 </body>
 </html>
